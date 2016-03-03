@@ -1,39 +1,20 @@
-import java.util.{ResourceBundle => JResourceBundle}
-
+import EigthFunctionAndClosures.Closures
+import TenCompositionAndInheritance.ArrayElement
 
 /**
- * Created by Joan do Carmo on 14/12/15.
- */
+  * Created by joan on 27/12/15.
+  */
 object Main extends App {
 
-  //  Variables.variables
-  //  Functions.callFunction
-  //  Iteration.whileIteration
-  //  Iteration.forAndForeachIteration
-  //
-  //
-  //
-  //  Lists.creatingList()
-  //  Lists.listOperators()
-  //
-  //  SetAndMaps.createMutableSet()
-  //  SetAndMaps.createInmutableMap()
 
-  //  Types.diferentTypes()
-  //  ObjectEquality.equals
-  //
-  //  Rational.createRational()
+  Closures.creatingAClousure()
+  println("------------------------------------")
+  Closures.passClosureToMethod
+  println("------------------------------------")
+  Closures.passClosureToMethodTwo
 
-
-  val a = new DynaA("aaaa")
-  val b = List(new DynaA("bbbb"), new DynaA("fdsfds"))
-
-
-  val c = a :: b
- val x = 2
-
-
+  println("------------------------------------")
+  val a = new ArrayElement(Array("aa", "bb"))
+  println(a.height)
 
 }
-
-class DynaA(a : String){}
